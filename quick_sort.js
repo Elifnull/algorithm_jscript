@@ -1,4 +1,4 @@
-//pivot point necessary
+//pivot point necessary, positino and partition
 
 function quickSort(arr, leftPos, rightPos, arrLength) {
     let initialLeftPos = leftPos;

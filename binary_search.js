@@ -17,5 +17,3 @@ function binarySearch(arr, i) {
     }
 
 }
-var result = binarySearch(a, 100);
-console.log(result);
