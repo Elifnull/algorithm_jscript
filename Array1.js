@@ -13,7 +13,27 @@ const pushForward = (array, val) => {
     return nuArray;
 }
 
-array1 = [4,3,5,9]
-val1 = 344
+let array1 = [4,3,5,9]
+let val1 = 344
 
-pushForward(array1, val1);
+let array2 =[];
+let val2 = null;
+
+// console.log(spreadForward(array1,val2));
+// pushForward(array1, val1);
+// pushForward(array2,val2);
+
+const popFirst = (array) => {
+    const [first,...everythingelse] = array;
+    console.log(everythingelse, first)
+    return first
+};
+
+const popFirstv1 = array =>{
+    let nuArray = [];
+    for( let key in array){
+
+    }
+}
+
+popFirst(array1)
