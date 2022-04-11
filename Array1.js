@@ -7,7 +7,7 @@ const pushForward = (array, val) => {
     const nuArray = [val];
     for (let key in array){
         console.log(parseInt(key)+1); //seeing how this works
-        nuArray[parseInt(key)+1] = array[parseInt(key)];
+        nuArray[parseInt(key)+1] = array[key];
     }
     console.log(nuArray);
     return nuArray;
@@ -31,9 +31,31 @@ const popFirst = (array) => {
 
 const popFirstv1 = array =>{
     let nuArray = [];
-    for( let key in array){
+    let initalVal = array[0];
 
+    for( let key in array){
+        console.log(array[key]);
+        
     }
 }
 
-popFirst(array1)
+// popFirstv1(array1)
+
+const insertValue = (array,location, value) => {
+    let nuArray =[];
+    nuArray[location] = value;
+    console.log(nuArray);
+    for( let key in array){
+        if (key < location ){
+            nuArray[key] = array[key]
+        }
+        else if (key >= location){
+            console.log(key, key+1)
+            nuArray[parseInt(key)+1] = array[key];
+        }
+    }
+    console.log(nuArray);
+    return nuArray;
+}
+
+insertValue(array1,2,val2);
