@@ -59,3 +59,32 @@ birthdayTest = (num1,num2) =>{
 // birthdayTest(11,30);
 // birthdayTest(11,11);
 // birthdayTest(30,30);
+
+leapYear = (year) => {//leap year wording is confusing, figuried it out
+    if( year % 4 == 0 && ((year % 100 != 0) || (year % 400 == 0))){
+        console.log(`${year} is a leap year`);
+    } else {
+        console.log(`${year} is not a leap year`);
+    }
+}
+
+// leapYear(1989);
+// leapYear(1991);
+// leapYear(1992);
+// leapYear(1993);
+// leapYear(1995);
+
+printCount = (count, stop) =>{
+    let integerCount= 0;
+    let initalCount = count;
+    while(count <= stop) {
+        if (count % 5 == 0){
+            console.log(count);
+            integerCount++;
+        }
+        count++;
+    }
+    console.log(`there where ${integerCount} integers divisible by 5 from ${initalCount} to ${stop}`)
+}
+
+// printCount(512,4096);
