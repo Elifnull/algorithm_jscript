@@ -23,4 +23,20 @@ factorial =(num)=> {
     return fact;
 }
 
-factorial(5);
+// factorial(5);
+
+fib = (num) => {//need to think more about this sequence
+    if( num < 3) return 1;
+    let previous = 1;
+    let current = 1;
+    for(let i = 2; i < num; i++){
+        let now = previous + current;
+        previous = current;
+        current = now;
+        console.log(previous, current, now)
+    }
+    console.log(`current: ${current}`);
+    return current;
+}
+
+fib(6);
