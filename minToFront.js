@@ -1,4 +1,8 @@
 minToFront = (array) => {
+    if(array.length < 2){
+        console.log("there is only 1 element")
+        return array;
+    } else{
     let min = [array[0]];
     let nuArray = [];
     let i = 0;
@@ -15,7 +19,8 @@ minToFront = (array) => {
     let NuRay = [min[0],...nuArray]
     console.log(NuRay);
     console.log(min)
-    return NuRay;
+    return NuRay;}
 }
 
 minToFront([2,3,4,6,1,0]);
+minToFront([0]);
