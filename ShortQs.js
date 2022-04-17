@@ -59,5 +59,11 @@ more dynamic.
 13.the amount of values sent in and recived can be unlimited (limits due to memeory). and with creative
 utilizaton of the return statment with objects, technicly you can send back many, but symantically 1.
 
-14.
+14. an array is a list of items and it can hold many lists, it is functionally a matrix.
+
+15.a t-diagram is a diagram used to track the code and what it is doing. this is good for understanding
+complex lines of code.
+
+16. as shown in this section i know the bulk way, and the line way is  // one would use the bulk for 
+large notes that are multi-line, and the line method for single line notes.
 */
