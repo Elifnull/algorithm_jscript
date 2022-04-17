@@ -1,0 +1,5 @@
+minToFront = (array) => {
+    let min = [];
+
+    
+}
