@@ -50,5 +50,14 @@ value the program will execute the code encapsulated within the boolean.
 10.while and for loops allows us to decrease the amount of repeated code by setting the parameters
 and conditions under which the code will be executed.
 
-11.
+11.a while loop is better utilized when the amount of loops is unknown, but the terminating condition
+is known.
+
+12.functions are equations and operagions that are given names and stored, much like variables, but
+more dynamic.
+
+13.the amount of values sent in and recived can be unlimited (limits due to memeory). and with creative
+utilizaton of the return statment with objects, technicly you can send back many, but symantically 1.
+
+14.
 */
