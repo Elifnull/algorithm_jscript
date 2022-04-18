@@ -1,18 +1,22 @@
-
-class Node {
-    constructor(data){
-        this.data = data;
-        this.next = null;
-    }
-}
-
-
 class LinkedList {
     constructor(){
         this.head = null;
+        this.length = 0;
     }
-    addFront(value) {
-        
+    addToFront(data) {
+        const new_node = new Node(data, this.head);
+        this.head = new_node;
+        ++length;
     }
 }
+
+class Node {
+    constructor(data,next){
+        this.data = data;
+        this.next = next;
+    }
+}
+
+
+
 
