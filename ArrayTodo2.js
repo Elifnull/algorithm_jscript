@@ -47,6 +47,9 @@ rotate = (array,shift) => {
 
 filterRange =(array,min,max) =>{
     let i = 0;
+    if(min-max > 0){
+        console.log("min value is larger than max value, please input correct value")
+    } else {
     for(let key in array){
         if (array[key] <= max && array[key] >= min){
             array[i] = array[key];
@@ -57,6 +60,7 @@ filterRange =(array,min,max) =>{
     console.log(i);
     array.length = i; //didn't know you can set arrays length!!!!
     console.log(array);
+    }
 }
 
-filterRange([1,2,3,4,5],2,1);
+filterRange([],2,4);
