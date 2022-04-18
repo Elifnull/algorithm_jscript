@@ -18,9 +18,9 @@ minToFront = (array) => {
     }
     let NuRay = [min[0],...nuArray]
     console.log(NuRay);
-    console.log(min)
+
     return NuRay;}
 }
 
 minToFront([2,3,4,6,1,0]);
-minToFront([0]);
+minToFront([0,1,0,1]);
