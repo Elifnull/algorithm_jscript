@@ -6,7 +6,12 @@ class LinkedList {
     addToFront(data) {
         const new_node = new Node(data, this.head);
         this.head = new_node;
-        ++length;
+        this.length++;
+    }
+    removeFromFront(){
+        if (this.head == null){
+            return this.head;
+        }
     }
 }
 
