@@ -11,6 +11,11 @@ class LinkedList {
     removeFromFront(){
         if (this.head == null){ //if the head is null then there is no node to remove
             return this.head;
+        } else {
+            removeNode = this.head;
+            this.head = removeNode.next;
+            removeNode.next = null;
+            return this.head;
         }
 
     }
@@ -29,7 +34,5 @@ class Node {
         this.next = next;
     }
 }
-
-
 
 
