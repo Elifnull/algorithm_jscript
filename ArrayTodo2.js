@@ -43,4 +43,20 @@ rotate = (array,shift) => {
     console.log("this is the final array:", array)
 }
 
-rotate([1,2,3,4,5],-2);
+// rotate([1,2,3,4,5],-2);
+
+filterRange =(array,min,max) =>{
+    let i = 0;
+    for(let key in array){
+        if (array[key] <= max && array[key] >= min){
+            array[i] = array[key];
+            ++i;
+            // console.log(array, i);
+        }
+    } 
+    console.log(i);
+    array.length = i; //didn't know you can set arrays length!!!!
+    console.log(array);
+}
+
+filterRange([1,2,3,4,5],2,1);
