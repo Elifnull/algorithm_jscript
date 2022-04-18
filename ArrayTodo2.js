@@ -11,7 +11,27 @@ reverse = (array) =>{
 }
 let array = [1,2,3,4,5,6,7,8,9];
 
-reverse(array);
+// reverse(array);
 
 
+rotate = (array,shift) => {
+    if(shift == 0){
+        console.log(array);
+        return array;
+    }
+    // let j= 0;
+    else if (shift > 0){
+        for(i=0; i < shift; i++){
+            temp = array[array.length -1]
+            console.log(temp)
+            for(j = array.length-1; j>0; j--){
+                array[j] = array[j-1]
+                console.log(array)
+            }
+            array[0] = temp;
+        }
+        console.log("this is the final array:", array)
+    }
+}
 
+rotate([1,2,3,4,5],1);
