@@ -30,8 +30,17 @@ rotate = (array,shift) => {
             }
             array[0] = temp;
         }
-        console.log("this is the final array:", array)
+        
+    } else if (shift < 0){
+        for(i=0; i < Math.abs(shift); i++){
+            temp = array[0];
+            for(j = 0; j < array.length -1; j++){
+                array[j]= array[j+1]
+            }
+            array[array.length-1] = temp;
+        }
     }
+    console.log("this is the final array:", array)
 }
 
-rotate([1,2,3,4,5],1);
+rotate([1,2,3,4,5],-2);
