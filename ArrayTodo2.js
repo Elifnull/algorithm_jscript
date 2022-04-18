@@ -66,8 +66,20 @@ filterRange =(array,min,max) =>{
 // filterRange([],2,4);
 
 concactArray=(array1,array2)=>{
-    array =[...array1,...array2];
+    const array =[...array1,...array2];
     console.log(array);
 }
 
-concactArray([1,2,3],[true,false]);
+concactArrayv2=(array1,array2)=>{
+    const nuArray =[];
+    for(i=0; i< array1.length;i++){
+        nuArray[i]=array1[i];
+    } 
+    for(i=0;i<array2.length;i++){
+        nuArray[array1.length+i]=array2[i];
+        console
+    }
+    console.log(nuArray);
+}
+
+concactArrayv2([1,2,3],[true,false]);
