@@ -63,4 +63,11 @@ filterRange =(array,min,max) =>{
     }
 }
 
-filterRange([],2,4);
+// filterRange([],2,4);
+
+concactArray=(array1,array2)=>{
+    array =[...array1,...array2];
+    console.log(array);
+}
+
+concactArray([1,2,3],[true,false]);
