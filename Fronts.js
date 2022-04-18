@@ -9,8 +9,16 @@ class LinkedList {
         this.length++;
     }
     removeFromFront(){
-        if (this.head == null){
+        if (this.head == null){ //if the head is null then there is no node to remove
             return this.head;
+        }
+
+    }
+    frontData(){
+        if (this.head == null){
+            return null;
+        } else {
+        return this.head.data
         }
     }
 }
